@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "こってり工房",
-  description: "こってり工房公式ファンサイト",
+  description: "こってり工房公式サイト",
 };
 
 export default function RootLayout({
