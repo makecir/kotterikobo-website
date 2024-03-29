@@ -1,3 +1,5 @@
+import News from "./News";
+
 const footerNavigation = {
   main: [
     { name: "Blog", href: "#" },
@@ -131,14 +133,7 @@ export default function Home() {
         </div>
 
         {/* News section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              News
-            </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">準備中</p>
-          </div>
-        </div>
+        <News />
 
         {/* Products section */}
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
