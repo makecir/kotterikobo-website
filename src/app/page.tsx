@@ -161,6 +161,9 @@ export default function Home() {
         className="mx-auto mt-40 overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8"
         style={{ backgroundColor: "#E83C3A", color: "#FAE6DD" }}
       >
+        <div className="flex justify-center items-center my-3">
+          <p>明日もまたお待ちしています。</p>
+        </div>
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
           aria-label="Footer"
