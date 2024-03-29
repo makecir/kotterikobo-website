@@ -1,3 +1,5 @@
+import News from "./News";
+
 const footerNavigation = {
   main: [
     { name: "Blog", href: "#" },
@@ -74,7 +76,6 @@ export default function Home() {
                     おいしいボードゲームができました。
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    {/* こってり工房へようこそ。こだわりの素材と熱い情熱を注ぎ込んで、心を動かすゲームを一つ一つ丁寧に作り上げました。みんなで集まって、笑顔あふれる時間を楽しみましょう。 */}
                     こってり工房へようこそ。私たちは、厳選された素材と熱い情熱を注ぎ、心を動かすボードゲームを一つ一つ手作りしています。友情や家族の絆を深める、記憶に残る楽しい時間を、こってり工房のボードゲームで一緒に作り上げましょう。新しい物語と冒険が、ここから始まります。
                   </p>
                 </div>
@@ -82,7 +83,7 @@ export default function Home() {
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="home1.jpg"
+                        src="djbu4.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -92,7 +93,7 @@ export default function Home() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="djbu3.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -100,7 +101,7 @@ export default function Home() {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                        src="monjamo4.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -110,7 +111,7 @@ export default function Home() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                        src="home1.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -118,7 +119,7 @@ export default function Home() {
                     </div>
                     <div className="relative">
                       <img
-                        src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src="monjamo3.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -132,14 +133,7 @@ export default function Home() {
         </div>
 
         {/* News section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              News
-            </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">準備中</p>
-          </div>
-        </div>
+        <News />
 
         {/* Products section */}
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
@@ -167,6 +161,9 @@ export default function Home() {
         className="mx-auto mt-40 overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8"
         style={{ backgroundColor: "#E83C3A", color: "#FAE6DD" }}
       >
+        <div className="flex justify-center items-center my-3">
+          <p>明日もまたお待ちしています。</p>
+        </div>
         <nav
           className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
           aria-label="Footer"
