@@ -44,13 +44,15 @@ export default function News() {
                   </time>
                   <a
                     // href={post.category.href}
-                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                    // 有効化時に↓に hover:bg-gray-100 を加える
+                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600"
                   >
                     {post.category.title}
                   </a>
                 </div>
                 <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  {/* href 有効化時に↓に group-hover:text-gray-600 を加える */}
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900">
                     {/* <a href={post.href}> */}
                     <span className="absolute inset-0" />
                     {post.title}
