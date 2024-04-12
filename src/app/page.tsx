@@ -72,6 +72,13 @@ export default function Home() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="logo/01_nomal_color.png"
+                      alt="logo1"
+                      className="w-2/3 object-cover"
+                    />
+                  </div>
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     おいしいボードゲームができました。
                   </h1>
