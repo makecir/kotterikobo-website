@@ -1,4 +1,4 @@
-import News from "./News";
+import News from "@/components/home/News";
 
 const footerNavigation = {
   main: [
