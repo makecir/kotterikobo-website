@@ -101,7 +101,7 @@ export default function Home() {
                     </div>
                     <div className="relative">
                       <img
-                        src="monjamo4.jpg"
+                        src="monjamo5.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -111,7 +111,7 @@ export default function Home() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="home1.jpg"
+                        src="nui_1go1.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
