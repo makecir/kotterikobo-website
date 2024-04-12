@@ -1,4 +1,6 @@
-import News from "./News";
+import Characters from "@/components/home/Characters";
+import News from "@/components/home/News";
+import Products from "@/components/home/Products";
 
 const footerNavigation = {
   main: [
@@ -72,6 +74,13 @@ export default function Home() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="logo/01_nomal_color.png"
+                      alt="logo1"
+                      className="w-2/3 object-cover"
+                    />
+                  </div>
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     おいしいボードゲームができました。
                   </h1>
@@ -101,7 +110,7 @@ export default function Home() {
                     </div>
                     <div className="relative">
                       <img
-                        src="monjamo4.jpg"
+                        src="monjamo5.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -111,7 +120,7 @@ export default function Home() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="home1.jpg"
+                        src="nui_1go1.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -136,24 +145,10 @@ export default function Home() {
         <News />
 
         {/* Products section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Products
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">準備中</p>
-          </div>
-        </div>
+        <Products />
 
         {/* Characters section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Characters
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">準備中</p>
-          </div>
-        </div>
+        <Characters />
       </main>
 
       {/* Footer */}
