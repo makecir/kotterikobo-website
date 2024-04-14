@@ -1,6 +1,7 @@
 import Characters from "@/components/home/Characters";
 import News from "@/components/home/News";
 import Products from "@/components/home/Products";
+import { Staff } from "@/components/home/Staff";
 
 const footerNavigation = {
   main: [
@@ -149,6 +150,9 @@ export default function Home() {
 
         {/* Characters section */}
         <Characters />
+
+        {/* Staff section */}
+        <Staff />
       </main>
 
       {/* Footer */}
