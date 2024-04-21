@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 const member = [
-  { role: "運営・ゲームデザイン", name: "こってり工房" },
   {
     role: "イラストレーション",
     name: "灰刃ねむみ",
@@ -16,13 +15,13 @@ const member = [
   },
 ];
 
-export function Staff() {
+export function SpecialThanks() {
   return (
     <>
       <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Staff
+            Special Thanks
           </h2>
           {/* <p className="mt-6 text-lg leading-8 text-gray-600">Description</p> */}
           <div className="mx-auto max-w-2xl px-4 py-4 sm:px-6 sm:py-4 lg:max-w-7xl lg:px-8">

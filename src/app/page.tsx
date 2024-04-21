@@ -1,7 +1,7 @@
 import Characters from "@/components/home/Characters";
 import News from "@/components/home/News";
 import Products from "@/components/home/Products";
-import { Staff } from "@/components/home/Staff";
+import { SpecialThanks } from "@/components/home/SpecialThanks";
 
 const footerNavigation = {
   main: [
@@ -152,7 +152,7 @@ export default function Home() {
         <Characters />
 
         {/* Staff section */}
-        <Staff />
+        <SpecialThanks />
       </main>
 
       {/* Footer */}
