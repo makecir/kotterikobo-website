@@ -1,7 +1,7 @@
 import Characters from "@/components/home/Characters";
 import News from "@/components/home/News";
 import Products from "@/components/home/Products";
-import { Staff } from "@/components/home/Staff";
+import { SpecialThanks } from "@/components/home/SpecialThanks";
 
 const footerNavigation = {
   main: [
@@ -30,35 +30,6 @@ export default function Home() {
       <main className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10">
-          <svg
-            className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
-                width={200}
-                height={200}
-                x="50%"
-                y={-1}
-                patternUnits="userSpaceOnUse"
-              >
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-              <path
-                d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
-                strokeWidth={0}
-              />
-            </svg>
-            <rect
-              width="100%"
-              height="100%"
-              strokeWidth={0}
-              fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
-            />
-          </svg>
           <div
             className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
             aria-hidden="true"
@@ -72,10 +43,10 @@ export default function Home() {
             />
           </div>
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+            <div className="mx-auto max-w-7xl px-6 pb-32 pt-12 sm:pt-24 lg:px-8 lg:pt-16">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <div className="flex justify-center items-center">
+                  <div className="flex justify-center items-center mb-8">
                     <img
                       src="logo/01_nomal_color.png"
                       alt="logo1"
@@ -152,7 +123,7 @@ export default function Home() {
         <Characters />
 
         {/* Staff section */}
-        <Staff />
+        <SpecialThanks />
       </main>
 
       {/* Footer */}

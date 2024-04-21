@@ -1,5 +1,14 @@
 const products = [
   {
+    id: 3,
+    name: "DJ部アペンド：勧悪懲善",
+    href: "#",
+    imageSrc: "/djbu_append_2.png",
+    imageAlt: "DJ部アペンド：勧悪懲善",
+    price: "1,000 JPY",
+    description: "破正顕邪アペンドディスク",
+  },
+  {
     id: 2,
     name: "モンジャモ！",
     href: "#",
@@ -36,7 +45,7 @@ export default function Products() {
               {products.map((product) => (
                 <div key={product.id} className="group relative">
                   {/* href を有効にしたときに↓に group-hover:opacity-75 を加える */}
-                  <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-xl bg-gray-200 lg:aspect-none lg:h-80 shadow-lg">
+                  <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-xl bg-white lg:aspect-none lg:h-80 shadow-lg">
                     <img
                       src={product.imageSrc}
                       alt={product.imageAlt}
