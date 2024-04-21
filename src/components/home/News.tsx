@@ -73,7 +73,8 @@ export default function News() {
           <p className="mt-2 text-lg leading-8 text-gray-600">
             近況をお知らせします！
           </p>
-          <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+          {/* border-t border-gray-200  */}
+          <div className="space-y-16 pt-10 sm:pt-16">
             {posts.map((post) => (
               <article
                 key={post.id}
