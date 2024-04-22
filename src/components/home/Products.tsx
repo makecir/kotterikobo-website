@@ -2,7 +2,7 @@ const products = [
   {
     id: 3,
     name: "DJ部アペンド：勧悪懲善",
-    href: "#",
+    href: "https://gamemarket.jp/game/183304",
     imageSrc: "/djbu_append_2.png",
     imageAlt: "DJ部アペンド：勧悪懲善",
     price: "1,000 JPY",
@@ -11,7 +11,7 @@ const products = [
   {
     id: 2,
     name: "モンジャモ！",
-    href: "#",
+    href: "https://gamemarket.jp/game/182066",
     imageSrc: "/monjamo6.jpg",
     imageAlt: "モンジャモ！",
     price: "1,000 JPY",
@@ -20,7 +20,7 @@ const products = [
   {
     id: 1,
     name: "DJ部",
-    href: "#",
+    href: "https://gamemarket.jp/game/183305",
     imageSrc: "/djbu5.png",
     imageAlt: "DJ部",
     price: "1,000 JPY",
@@ -55,10 +55,17 @@ export default function Products() {
                   <div className="mt-4 flex justify-between">
                     <div>
                       <h3 className="text-lg text-gray-700">
-                        {/* <a href={product.href}> */}
-                        <span aria-hidden="true" className="absolute inset-0" />
-                        {product.name}
-                        {/* </a> */}
+                        <a
+                          href={product.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="absolute inset-0"
+                          />
+                          {product.name}
+                        </a>
                       </h3>
                       <p className="mt-1 text-sm text-gray-500">
                         {product.description}
