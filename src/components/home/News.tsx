@@ -3,6 +3,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const posts = [
   {
+    id: 3,
+    title: "ゲームマーケット 2024 春お疲れ様でした！ + 商品委託開始のお知らせ",
+    // href: "#",
+    description: `
+      ゲームマーケット 2024 春 お疲れ様でした！！土日両日ともに多くの方にお越しいただき、誠にありがとうございました！！
+      今回取り扱った作品については、ぬいぐるみを除いて全て委託販売を開始いたしましたので、ぜひお手に取っていただければと思います。
+      今後ともこってり工房をよろしくお願いいたしますっ！
+      `,
+    date: "2024/04/29",
+    datetime: "2024-04-29",
+    category: {
+      title: "ゲームマーケット",
+      // href: "#"
+    },
+    links: [
+      {
+        text: "ボドケーマ 「こってり工房」",
+        href: "https://bodoge.hoobby.net/games?search%5Bfreeword%5D=%E3%81%93%E3%81%A3%E3%81%A6%E3%82%8A%E5%B7%A5%E6%88%BF%EF%BC%88Kotteri+Kobo%EF%BC%89",
+      },
+      {
+        text: "メロンブックス「こってり工房」",
+        href: "https://www.melonbooks.co.jp/circle/index.php?circle_id=125577",
+      },
+    ],
+    author: {
+      name: "2号",
+      role: "",
+      // href: "#",
+      imageUrl: "author/2go.png",
+    },
+  },
+  {
     id: 2,
     title:
       "ゲームマーケット 2024 春で新作「DJ部アペンド：勧悪懲善」を頒布します【両 - A05】",
