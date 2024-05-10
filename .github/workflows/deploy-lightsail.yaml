@@ -24,4 +24,5 @@ jobs:
           source scripts/setup_nvm.sh
           pnpm install
           pnpm build
+          lsof -ti:3000 | xargs kill -9
           nohup pnpm start > /dev/null 2>&1 &
