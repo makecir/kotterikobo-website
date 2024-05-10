@@ -110,7 +110,7 @@ export default function News() {
             {posts.map((post) => (
               <article
                 key={post.id}
-                className="flex max-w-xl flex-col items-start justify-between"
+                className="flex max-w-3xl flex-col items-start justify-between"
               >
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime={post.datetime} className="text-gray-500">
