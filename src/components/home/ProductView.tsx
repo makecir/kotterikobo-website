@@ -4,7 +4,25 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function ProductView({ isOpen, onClose, product }) {
+export default function ProductView({
+  isOpen,
+  onClose,
+  product,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+  product: {
+    id: number;
+    name: string;
+    description: string;
+    imageSrc: string;
+    imageAlt: string;
+    playablePlayers: string;
+    estimatedTime: string;
+    targetAge: string;
+    links: { name: string; href: string }[];
+  };
+}) {
   return (
     <>
       <Transition.Root show={isOpen} as={Fragment}>
