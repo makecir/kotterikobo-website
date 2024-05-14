@@ -147,7 +147,7 @@ export default function News() {
                           {link.text}
                           <FontAwesomeIcon
                             icon={faExternalLinkAlt}
-                            className="icon-small  link-icon"
+                            className="icon-small link-icon"
                           />
                         </a>
                       </li>

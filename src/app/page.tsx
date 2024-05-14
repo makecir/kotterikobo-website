@@ -26,7 +26,7 @@ const footerNavigation = {
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: "#fef8ea" }}>
+    <div className="kotteri-bg">
       <main className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10">
