@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const people = [
   {
     name: "1号",
@@ -40,10 +42,12 @@ export default function Characters() {
         >
           {people.map((person) => (
             <li key={person.name}>
-              <img
+              <Image
                 className="mx-auto h-24 w-24 rounded-full bg-white shadow-lg"
                 src={person.imageUrl}
                 alt=""
+                width="315"
+                height="315"
               />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
                 {person.name}

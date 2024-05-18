@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -31,7 +33,7 @@ const posts = [
       name: "2号",
       role: "",
       // href: "#",
-      imageUrl: "author/2go.png",
+      imageUrl: "/author/2go.png",
     },
   },
   {
@@ -66,7 +68,7 @@ const posts = [
       name: "店長",
       role: "",
       // href: "#",
-      imageUrl: "author/shop_owner.png",
+      imageUrl: "/author/shop_owner.png",
     },
   },
   {
@@ -88,7 +90,7 @@ const posts = [
       name: "1号",
       role: "",
       // href: "#",
-      imageUrl: "author/1go.png",
+      imageUrl: "/author/1go.png",
     },
   },
   // More posts...
@@ -155,10 +157,12 @@ export default function News() {
                   </ul>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
-                  <img
+                  <Image
                     src={post.author.imageUrl}
                     alt=""
                     className="h-10 w-10 rounded-full bg-gray-50"
+                    width="315"
+                    height="315"
                   />
                   <div className="text-sm leading-6">
                     <p className="font-semibold text-gray-900">
