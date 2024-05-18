@@ -1,0 +1,40 @@
+name: Code Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  code-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.15.4
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "pnpm"
+          cache-dependency-path: "pnpm-lock.yaml"
+
+      - name: Install packages
+        run: pnpm install
+
+      - name: Run prettier check
+        run: pnpm prettier
+
+      - name: Run lint check
+        run: pnpm lint
+
+      - name: Run type check
+        run: pnpm typecheck
+
+      - name: Build test
+        run: pnpm build
