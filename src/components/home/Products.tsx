@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 import ProductView from "@/components/home/ProductView";
 
@@ -104,10 +105,12 @@ export default function Products() {
                   >
                     {/* href を有効にしたときに↓に group-hover:opacity-75 を加える */}
                     <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-xl bg-white lg:aspect-none lg:h-80 shadow-lg">
-                      <img
+                      <Image
                         src={product.imageSrc}
                         alt={product.imageAlt}
                         className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                        width="1000"
+                        height="1000"
                       />
                     </div>
                     <div className="mt-4 flex justify-between">

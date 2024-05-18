@@ -1,4 +1,6 @@
 import { Fragment } from "react";
+import Image from "next/image";
+
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -70,10 +72,12 @@ export default function ProductView({
 
                     <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:items-center lg:gap-x-8">
                       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-6">
-                        <img
+                        <Image
                           src={product.imageSrc}
                           alt={product.imageAlt}
                           className="object-cover object-center"
+                          width="1000"
+                          height="1000"
                         />
                       </div>
                       <div className="sm:col-span-8 lg:col-span-6">

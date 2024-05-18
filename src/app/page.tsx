@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Characters from "@/components/home/Characters";
 import News from "@/components/home/News";
 import Products from "@/components/home/Products";
@@ -47,10 +49,12 @@ export default function Home() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <div className="flex justify-center items-center mb-8">
-                    <img
-                      src="logo/01_nomal_color.png"
+                    <Image
+                      src="/logo/01_nomal_color.png"
                       alt="logo1"
                       className="w-2/3 object-cover"
+                      width="800"
+                      height="700"
                     />
                   </div>
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -63,46 +67,56 @@ export default function Home() {
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
-                      <img
-                        src="djbu4.png"
+                      <Image
+                        src="/djbu4.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width="1106"
+                        height="1178"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
-                      <img
-                        src="djbu3.png"
+                      <Image
+                        src="/djbu3.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width="1181"
+                        height="1181"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative">
-                      <img
-                        src="monjamo5.png"
+                      <Image
+                        src="/monjamo5.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width="704"
+                        height="1056"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                   </div>
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
-                      <img
-                        src="nui_1go1.png"
+                      <Image
+                        src="/nui_1go1.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width="704"
+                        height="1056"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
                     <div className="relative">
-                      <img
-                        src="monjamo3.png"
+                      <Image
+                        src="/monjamo3.png"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width="890"
+                        height="1208"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
